@@ -1,3 +1,4 @@
+import Header from '../Header';
 import { Container } from './styles';
 
 
@@ -7,9 +8,12 @@ type Props = {
 
 const Main = ({children}: Props) => {
   return (
-    <Container> 
-       <h1>Teste Freont end{children}</h1>
-    </Container>
+    <>
+      <Container> 
+        <Header></Header>
+      </Container>
+    </>
+
   )
 }
 
