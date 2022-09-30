@@ -10,7 +10,11 @@ const Main = ({children}: Props) => {
   return (
     <>
       <Container> 
-        <Header></Header>
+        <Header />
+        
+        <main>
+          {children}
+        </main>
       </Container>
     </>
 

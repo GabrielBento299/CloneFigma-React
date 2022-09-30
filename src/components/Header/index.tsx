@@ -1,7 +1,7 @@
 import { Container, MunuList } from './styles';
  import LogoHero from '../../assets/logo.svg';
 
-import Button from '../Button';
+import Button from '../ButtonHeader';
 
 const Header = () => {
   return (

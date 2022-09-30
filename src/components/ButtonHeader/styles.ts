@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonEnquiry = styled.button`
+export const Button = styled.button`
     width: 130px;
     height: 42px;
     margin-left: 50px;
@@ -12,9 +12,9 @@ export const ButtonEnquiry = styled.button`
     outline: none;
     border-radius: 4px;
 
-    transition: all 0.4s ease-in-out;
-
     cursor: pointer;
+    
+    transition: all 0.4s ease-in-out;
 
     &:hover {
         color: #FFF;
