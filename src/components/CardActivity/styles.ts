@@ -4,12 +4,16 @@ export const Container = styled.div`
     position: absolute;
     width: 154px;
     height: 77px;
-    top: 105px;
     left: 75px;
     overflow: hidden;
 
     
-    
+    opacity: 0;
+    top: 80px;
+ 
+    animation: showOnpageCard 1.50s linear forwards;
+
+  
     border-radius: 12px;
     text-align: left;
     padding: 10px;
@@ -35,44 +39,47 @@ export const Container = styled.div`
      }
 
     i {
-    width: 154px;
-    height: 77px;
-    position: absolute;
-    border-radius: 50px;
-    &.circle1 {
-      left: 104px;
-      top: -20px;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.3)
-      );
-    }
-    &.circle2 {
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.3)
-      );
-      left: 81px;
-      bottom: -50px;
-      transform: rotate(45deg);
-    }
-    &.circle3 {
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      transform: rotate(-72deg);
-      top: -54px;
-      left: 47px;
-    }
-  }
-  @keyframes showOnPageCard {
-    from {
-      opacity: 0;
-      top: 0px;
-    }
-    to {
-      opacity: 1;
-      top: 105px;
+          width: 154px;
+          height: 77px;
+          position: absolute;
+          border-radius: 50px;
+
+            &.circle1 {
+              left: 104px;
+              top: -20px;
+              background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.3)
+              );
+            }
+
+              &.circle2 {
+                background: linear-gradient(
+                  0deg,
+                  rgba(255, 255, 255, 0.3),
+                  rgba(255, 255, 255, 0.3)
+                );
+                left: 81px;
+                bottom: -50px;
+                transform: rotate(45deg);
+              }
+
+              &.circle3 {
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                transform: rotate(-72deg);
+                top: -54px;
+                left: 47px;
     }
   }
+        @keyframes showOnpageCard {
+          from {
+            opacity: 0;
+            top: 0px;
+          }
+          to {
+            opacity: 1;
+            top: 105px;
+          }
+        }
 `;

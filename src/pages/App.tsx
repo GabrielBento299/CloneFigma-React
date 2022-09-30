@@ -5,6 +5,7 @@ import HeroHeaderImage from '../assets/hero-header.png';
 import Main from '../components/Main';
 import ButtonContact from '../components/ButtonContact';
 import CardActivity from '../components/CardActivity';
+import CardChart from '../components/CardChart';
  
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
 
             <ColumnImage>
               <CardActivity />
-              
+              <CardChart />
               <img src={HeroHeaderImage} alt="Uma mulher fazendo uma pesquisa" />
             </ColumnImage>
           </Container>
