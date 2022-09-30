@@ -8,7 +8,7 @@ const CardChart = () => {
 
   const fillZero = useCallback((value: number) => {
     const number = (value + 1).toString();
-
+    
      return number.padStart(2,'0');
   },[]);
 
